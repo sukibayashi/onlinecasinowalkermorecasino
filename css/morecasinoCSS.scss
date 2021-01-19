@@ -1,0 +1,24 @@
+// カジノ一覧
+.morecasinopage {
+    border: 4px solid #363636;
+    border-radius: .5rem;
+
+    .morecasinopage_l {
+        background-color: #363636;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 21px 27px 15px;
+
+        .morecasinopage_l_IMG {
+            width: 100%;
+            height: 100%;
+        }
+
+        .morecasinopage_l_bonus{
+            color: white;
+            font-weight: bold;
+        }
+    }
+}

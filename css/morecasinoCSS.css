@@ -1,0 +1,31 @@
+.morecasinopage {
+  border: 4px solid #363636;
+  border-radius: .5rem;
+}
+
+.morecasinopage .morecasinopage_l {
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 21px 27px 15px;
+}
+
+.morecasinopage .morecasinopage_l .morecasinopage_l_IMG {
+  width: 100%;
+  height: 100%;
+}
+
+.morecasinopage .morecasinopage_l .morecasinopage_l_bonus {
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=morecasinoCSS.css.map */

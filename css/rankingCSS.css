@@ -703,10 +703,12 @@ img:not([src]) {
 
 .rankingpage_twitter {
   background-color: #FF3D7D;
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/rankingpagetwitter600x150.png");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: .5rem;
-  padding: 75px 5px 15px 5px;
+  padding: 110px 5px 15px 5px;
+  background-position: center 12px;
   text-align: center;
 }
 
