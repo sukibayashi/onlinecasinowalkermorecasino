@@ -1,0 +1,727 @@
+@charset "UTF-8";
+.recommendedEvent_IMG {
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-box-shadow: 4px 7px 15px -1px rgba(163, 163, 163, 0.88);
+  box-shadow: 4px 7px 15px -1px rgba(163, 163, 163, 0.88);
+}
+
+.flipIn,
+.rankingmenu_ul li {
+  -webkit-animation: flipdown 0.5s ease both;
+  animation: flipdown 0.5s ease both;
+}
+
+.oncasicardshadow {
+  -webkit-box-shadow: 0 3px 0 0 rgba(226, 228, 231, 0.75);
+          box-shadow: 0 3px 0 0 rgba(226, 228, 231, 0.75);
+}
+
+img.lazy {
+  opacity: 0;
+}
+
+img:not(.initial) {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img.initial,
+img.loaded,
+img.error {
+  opacity: 1;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+.list-group-flush > .list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.fa-star {
+  color: #ffd32a !important;
+}
+
+.fa-star-half-alt {
+  color: #ffd32a !important;
+}
+
+.markyellow {
+  background-color: #fee87e;
+  font-weight: 700;
+}
+
+.markpink {
+  color: #ff3d7d;
+  font-weight: bold;
+}
+
+.brspace {
+  display: none;
+}
+
+.lastupdate {
+  text-align: end;
+  color: gray;
+}
+
+.rankingpage_to_toppage .rankingpage_btn_totoppage {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb9cd), to(#ff4276));
+  background: linear-gradient(to bottom, #ffb9cd 0%, #ff4276 100%);
+  color: #fff;
+  border: 2px solid #ff91af;
+}
+
+.rankingpage_to_toppage .rankingpage_btn {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  text-shadow: 0 0 4px #555;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.rankingpage_to_toppage .rankingpage_btn:hover {
+  opacity: 0.7;
+}
+
+.ranking_CARD {
+  border: 1px solid #d8d8d8;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.ranking_container .container,
+.ranking_container .container-lg,
+.ranking_container .container-md,
+.ranking_container .container-sm,
+.ranking_container .container-xl,
+.ranking_container .container-xxl {
+  max-width: 1100px;
+}
+
+.ranking_point {
+  margin: 0.5em 0;
+}
+
+.ranking_point .ranking_point_title {
+  font-size: 1.05rem;
+  background: #ff3d7d;
+  padding: 11px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.ranking_point .ranking_point_p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.ranking_point .ranking_point_p img {
+  width: 50px;
+  height: 50px;
+}
+
+.ranking_point .ranking_point_p .ranking_point_content {
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn .rankingpage_btn_play {
+  background-color: #ff7629;
+  border-bottom: 4px solid #d94e00;
+  color: #fff;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn .rankingpage_btn_info {
+  background-color: #32b16c;
+  border-bottom: 4px solid #1b7600;
+  color: #fff;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn .rankingpage_btn {
+  position: relative;
+  width: calc(50% - 5px);
+  height: 52px;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn .rankingpage_btn:hover {
+  opacity: 0.7;
+}
+
+.rankingpage_card_paddingLeft .rankingpage_card_btn .rankingpage_card_paddingLeft_IMGA br {
+  display: none;
+}
+
+.failfivecontent {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #44a5ff;
+  border-radius: 8px;
+}
+
+.failfivecontent .failfivecontent_title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #fff;
+  color: #44a5ff;
+  font-weight: bold;
+}
+
+.failfivecontent .failfivecontent_ol {
+  padding: 20px 25px;
+  margin: 0;
+}
+
+.failfivecontent p {
+  display: none;
+}
+
+.rankingmenu_card {
+  margin: 0 auto !important;
+  width: 100%;
+  border: none;
+}
+
+.rankingmenu_card .rankingmenu_ul {
+  list-style: none;
+  -webkit-perspective: 900;
+  perspective: 900;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li {
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #00375e;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 0px 0px;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_left {
+  width: 65%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_left img {
+  width: 29px;
+  height: 100%;
+  margin-right: 12px;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_left:hover {
+  opacity: 0.7;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_left2 {
+  width: 65%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_left2 img {
+  width: 28px;
+  height: 100%;
+  margin-right: 9px;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_right {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 38px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_right .rankingmenu_li_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8%;
+}
+
+.rankingmenu_card .rankingmenu_ul a .rankingmenu_li .rankingmenu_li_right .rankingmenu_li_star br {
+  display: none;
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper {
+  width: 100%;
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_heading {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_heading a::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  position: absolute;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_heading.active a::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_title > a:hover {
+  background-color: #dae0e5;
+}
+
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_title > a,
+.rankingmenu_card .rankingmenu_ul .ranking_accordion .ranking_accordion_wrapper .ranking_accordion_title > a:active {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.rankingmenu_ul a li:nth-of-type(1) {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.rinsonlinecasinorankingtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.rankingmenu .rankingmenu_header {
+  background-image: -webkit-gradient(linear, right top, left top, from(#421f87), to(#7810af));
+  background-image: linear-gradient(270deg, #421f87 0%, #7810af 100%);
+  color: white;
+  font-weight: bold;
+  -webkit-animation: flipdown 0.5s ease both;
+  animation: flipdown 0.5s ease both;
+}
+
+.rankingmenu .casinomorebtn {
+  color: #35529a;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rankingmenu .casinomorebtn br {
+  display: none;
+}
+
+.more-list-group-item {
+  position: relative;
+  display: block;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.rankingpage_card {
+  position: relative;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.4rem;
+}
+
+.rankingpage_card .rankingpage_card_tittle {
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_pink {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(#421f87), to(#7810af));
+  background-image: linear-gradient(270deg, #421f87 0%, #7810af 100%);
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_pink h3 {
+  margin-left: 78px;
+  color: #fff;
+  text-shadow: 2px 3px 0px #00000066;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_pink h3 .rankingpage_card_EN {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #eedf2a;
+  text-shadow: 2px 3px 0px #00000066;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_Rank {
+  position: absolute;
+  top: 0px;
+  left: 6px;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_Rank img {
+  width: 70px;
+  height: 100%;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_Rank2 {
+  position: absolute;
+  top: 7px;
+  left: 6px;
+}
+
+.rankingpage_card .rankingpage_card_tittle .rankingpage_card_Rank2 img {
+  width: 70px;
+  height: 100%;
+}
+
+.rankingpage_card .rankingpage_card_content {
+  padding: 15px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_IMG {
+  width: 100%;
+  height: 70%;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .card_main_Rating {
+  width: 90px;
+  height: 80px;
+  border: 1px red solid;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .card_main_Rating p {
+  font-size: 4rem;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .Rating_conent_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  position: relative;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .Rating_conent_title .rankingmenu_li_star {
+  background-color: #fff;
+  z-index: 1;
+  padding: 2px 5px;
+  font-size: 13px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .Rating_conent_title .rankingmenu_li_title {
+  background-color: #fff;
+  z-index: 1;
+  padding: 2px 5px;
+  font-size: 13px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_main_Rating .Rating_conent_title::after {
+  content: "";
+  border-top: 1px solid #d1d1d1;
+  width: 100%;
+  position: absolute;
+  bottom: 11px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto {
+  margin: 1em 0;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto p {
+  display: none;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto .hitokoto-circle1 {
+  font-size: 16px;
+  line-height: 1.5;
+  position: absolute;
+  margin-top: -37px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto .hitokoto-circle1:after {
+  content: "イ";
+  position: absolute;
+  margin-top: 0.2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto .hitokoto-circle2:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  margin-left: -12px;
+  border: 5px solid transparent;
+  border-top: 10px solid #4caf50;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto .hitokoto-circle2 {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: -37px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto .hitokoto-circle2:after {
+  content: "ン";
+  position: absolute;
+  margin-top: 0.2em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 50%;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto ul {
+  list-style-type: none;
+  padding-left: 0rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
+  font-size: 14px;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto ul li {
+  padding: 2px 0;
+}
+
+.rankingpage_card .rankingpage_card_content .hitokoto ul li::before {
+  display: inline;
+  right: 10px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f111";
+  color: #4caf50;
+  font-size: 15px;
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_payment {
+  margin: 20px 0px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_payment .rankingpage_card_payment_card {
+  background-color: #f0f0f0;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_payment .rankingpage_card_payment_card .payment_title {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_card_payment .rankingpage_card_payment_card .payment_circle_IMG {
+  width: 100%;
+  height: 100%;
+  padding: 6% 0 6% 0;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_info {
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+  color: #35529a;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #dfe3ee;
+}
+
+.rankingpage_card .rankingpage_card_content .rankingpage_info_content {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.card_main_Rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+
+.card_main_Rating .card_main_Rating_font {
+  position: absolute;
+  font-size: 4rem;
+  color: #ff3d7d;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.rankingpage_IMG img {
+  width: 100%;
+  height: 100%;
+}
+
+.rankingpage_twitter {
+  background-color: #FF3D7D;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: .5rem;
+  padding: 75px 5px 15px 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .brspace {
+    display: block;
+  }
+  .rankingpage_card .rankingpage_card_content .rankingpage_info {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .lastupdate {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=rankingCSS.css.map */
