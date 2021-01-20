@@ -1,24 +1,136 @@
 // カジノ一覧
 .morecasinopage {
     border: 4px solid #363636;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
 
-    .morecasinopage_l {
-        background-color: #363636;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 21px 27px 15px;
+    .morecasinopage_row {
+        margin-left: 0px;
+        margin-right: 0px;
 
-        .morecasinopage_l_IMG {
-            width: 100%;
-            height: 100%;
+        .morecasinopage_l {
+            background-color: #363636;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px 27px;
+
+            .morecasinopage_l_IMG {
+                width: 100%;
+                height: 100%;
+            }
+
+            .morecasinopage_l_bonus {
+                width: 100%;
+                color: white;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+
+            .morecasinopage_l_play {
+                margin-top: 20px;
+                background: #2b70ff;
+                display: inline-block;
+                font-size: 1rem;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 14px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.27);
+                cursor: pointer;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+            }
         }
 
-        .morecasinopage_l_bonus{
-            color: white;
-            font-weight: bold;
+        .morecasinopage_r {
+            padding: 10px 15px;
+
+            .morecasinopage_r_title {
+                // width: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #d8d8d8;
+
+                h3 {
+                    font-weight: bold;
+                }
+
+                .morecasinopage_r_more {
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0.5rem;
+                    background-color: #198754;
+                    padding: 0px 10px;
+                    color: #ffffff;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                
+                .morecasinopage_r_more:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .morecasinopage_r_point {
+                margin-top: 5px;
+
+                ul {
+                    list-style-type: none;
+                    padding-inline-start: 0px;
+
+                    li {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .morecasinopage {
+        .morecasinopage_row {
+            .morecasinopage_l {
+                .morecasinopage_l_bonus {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .morecasinopage {
+        .morecasinopage_row {
+            .morecasinopage_l {
+                padding: 30px 27px;
+
+                .morecasinopage_l_bonus {
+                    font-size: 1rem;
+                }
+
+                .morecasinopage_l_play {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .morecasinopage {
+        .morecasinopage_row {
+            .morecasinopage_l {
+                padding: 30px 27px;
+
+                .morecasinopage_l_play {
+                    font-size: 0.9rem;
+                }
+            }
         }
     }
 }
