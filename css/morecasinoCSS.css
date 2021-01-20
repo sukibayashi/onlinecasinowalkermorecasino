@@ -1,11 +1,23 @@
+.morecasinocasitabi_line {
+  border-color: #0d2858 !important;
+}
+
+.morecasinocasitabi_bg {
+  background-color: #0d2858 !important;
+}
+
 .morecasinopage {
-  border: 4px solid #363636;
+  border: 4px solid;
   border-radius: 0.5rem;
 }
 
 .morecasinopage .morecasinopage_row {
   margin-left: 0px;
   margin-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_l {
@@ -37,11 +49,12 @@
   color: white;
   font-weight: bold;
   margin-top: 15px;
+  font-size: 1rem;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play {
   margin-top: 20px;
-  background: #2b70ff;
+  background-color: #2b70ff;
   display: inline-block;
   font-size: 1rem;
   color: #ffffff;
@@ -52,10 +65,16 @@
   cursor: pointer;
   letter-spacing: 0.5px;
   font-weight: bold;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play:hover {
+  background-color: #215bd3;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_r {
-  padding: 10px 15px;
+  padding: 25px 15px;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title {
@@ -87,15 +106,19 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0.5rem;
-  background-color: #198754;
+  background-color: #57c15c;
   padding: 0px 10px;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title .morecasinopage_r_more:hover {
   text-decoration: none;
+  background-color: #40a145;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_point {
@@ -127,6 +150,15 @@
   }
   .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play {
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .morecasinopage .morecasinopage_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
