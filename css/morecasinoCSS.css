@@ -6,11 +6,11 @@
   background-color: #0d2858 !important;
 }
 
-.morecasinoluckyniki_line {
+.morecasinoblack_line {
   border-color: #000 !important;
 }
 
-.morecasinoluckyniki_bg {
+.morecasinoblack_bg {
   background-color: #000 !important;
 }
 
@@ -20,6 +20,25 @@
 
 .morecasinocasinosecret_bg {
   background-color: #def0fc !important;
+}
+
+.morecasinointercasino_line {
+  border: 0px solid !important;
+  padding: 1rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#8404d9), to(#f20574));
+  background: linear-gradient(to right, #8404d9, #f20574);
+  padding: 4px;
+}
+
+.morecasinointercasino_line .morecasinointercasino_r {
+  background-color: #ffffff;
+  border-radius: 0rem 0.3rem 0.3rem 0rem;
+}
+
+.morecasinointercasino_bg {
+  background-color: #000 !important;
+  border-radius: .3rem 0rem 0rem .3rem;
 }
 
 .morecasino_list .morecasino_list_row {
