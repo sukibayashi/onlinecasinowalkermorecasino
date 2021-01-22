@@ -37,8 +37,10 @@
 }
 
 .morecasinointercasino_bg {
-  background-color: #000 !important;
-  border-radius: .3rem 0rem 0rem .3rem;
+  background-color: #36363600 !important;
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobgpc.jpg");
+  background-size: cover;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
 }
 
 .morecasino_list .morecasino_list_row {
@@ -68,6 +70,11 @@
 .morecasino_list .morecasino_list_row .col-3 .morecasino_list_casino img {
   width: 100%;
   height: 100%;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_casino:hover,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_casino:hover {
+  background-color: #ff3d7d26;
 }
 
 .morecasinopage {
@@ -257,6 +264,14 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .morecasinointercasino_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobg.jpg");
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+  }
+  .morecasinointercasino_line .morecasinointercasino_r {
+    background-color: #ffffff;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
   }
 }
 
