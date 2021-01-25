@@ -46,7 +46,6 @@
     background-color: #36363600 !important;
     background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobgpc.jpg");
     background-size: cover;
-    border-radius: 0.3rem 0rem 0rem 0.3rem;
 }
 
 // カジノ一覧
@@ -80,7 +79,7 @@
 
 .morecasinopage {
     border: 4px solid;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
 
     .morecasinopage_row {
         margin-left: 0px;
@@ -95,6 +94,7 @@
             align-items: center;
             text-align: center;
             padding: 20px 27px;
+            border-radius: 0.3rem 0rem 0rem 0.3rem;
 
             .morecasinopage_l_IMG {
                 width: 100%;
@@ -256,6 +256,9 @@
     .morecasinointercasino_bg {
         // background-color: #000 !important;
         background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobg.jpg");
+    }
+
+    .morecasinopage .morecasinopage_row .morecasinopage_l{
         border-radius: 0.3rem 0.3rem 0rem 0rem;
     }
 
