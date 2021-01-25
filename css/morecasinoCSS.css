@@ -3,7 +3,8 @@
 }
 
 .morecasinocasitabi_bg {
-  background-color: #0d2858 !important;
+  background-image: url("../IMG/mainIMG/casitabibgpc.png");
+  background-size: cover;
 }
 
 .morecasinoblack_line {
@@ -19,7 +20,8 @@
 }
 
 .morecasinocasinosecret_bg {
-  background-color: #def0fc !important;
+  background-image: url("../IMG/mainIMG/casinosecretbgpc.png");
+  background-size: cover;
 }
 
 .morecasinointercasino_line {
@@ -216,6 +218,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_payments .morecasinopage_r_paymentsicon .r_paymentsicon {
@@ -227,7 +231,7 @@
           justify-content: center;
   width: 46px;
   height: 30px;
-  margin: 0 2px;
+  margin: 3px 2px;
   border-radius: 2px;
   background-color: #f4f5f5;
   -webkit-box-shadow: 0 2px 0 0 #d3d2d2;
@@ -265,6 +269,10 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .morecasinocasinosecret_bg {
+    background-image: url("../IMG/mainIMG/casinosecretbg.png");
+    background-size: cover;
+  }
   .morecasinointercasino_bg {
     background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobg.jpg");
     border-radius: 0.3rem 0.3rem 0rem 0rem;
@@ -272,6 +280,10 @@
   .morecasinointercasino_line .morecasinointercasino_r {
     background-color: #ffffff;
     border-radius: 0rem 0rem 0.3rem 0.3rem;
+  }
+  .morecasinocasitabi_bg {
+    background-image: url("../IMG/mainIMG/casitabibg.png");
+    background-size: cover;
   }
 }
 
