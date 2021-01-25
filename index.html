@@ -152,11 +152,11 @@
                     </div>
 
                     <div id="app">
-                        <!-- <div class="btn btn-primary m-1" >全カジノ</div>
-                        <div class="btn btn-primary m-1" @click="key = 1">ライブカジノおすすめ</div>
-                        <div class="btn btn-primary m-1">スロットカジノおすすめ</div> -->
-                        <button @click="key = 1">Hide the text below</button>
-                        <button @click="key = 2">Toggle hide and show</button>
+                        <div class="btn btn-primary m-1" >全カジノ</div>
+                        <div  @click="key = 1"></div>
+                        <div ></div>
+                        <button @click="key = 1" class="btn btn-primary m-1">ライブカジノおすすめ</button>
+                        <button @click="key = 2" class="btn btn-primary m-1">スロットカジノおすすめ</button>
                         <button @click="key = 3">Toggle hide and show</button>
                         <button @click="key = 4">Toggle hide and show</button>
 
@@ -201,8 +201,9 @@
                                     <a href="https://onlinecasino-walker.com/ranking/188bet/">
                                         <!-- <img class="lazy morecasinopage_l_IMG" alt="188ベット"
                                             data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" /> -->
-                                        <div v-lazy-container="{ selector: 'img' }">
-                                            <img class="morecasinopage_l_IMG" alt="188ベット" data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png">
+                                        <div v-lazy-container="{ selector: 'img',}">
+                                            <img class="morecasinopage_l_IMG" alt="188ベット" lazy="loading"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png">
                                         </div>
                                     </a>
                                     <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
@@ -2262,11 +2263,10 @@
     <script>
         Vue.use(VueLazyload, {
             preLoad: 1.3,
-            error: 'dist/error.png',
-            loading: 'dist/loading.gif',
+            lazyComponent: true,
             attempt: 1,
             // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
-            listenEvents: ['scroll']
+            listenEvents: ['scroll'],
         })
 
         var app = new Vue({

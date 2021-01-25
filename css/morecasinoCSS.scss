@@ -1,3 +1,11 @@
+img[lazy=loading] {
+    opacity: 0;
+}
+
+img[lazy=loaded] {
+    transition: opacity 1s;
+}
+
 // カジ旅
 .morecasinocasitabi_line {
     border-color: #0d2858 !important;
@@ -258,7 +266,7 @@
         background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobg.jpg");
     }
 
-    .morecasinopage .morecasinopage_row .morecasinopage_l{
+    .morecasinopage .morecasinopage_row .morecasinopage_l {
         border-radius: 0.3rem 0.3rem 0rem 0rem;
     }
 

@@ -1,3 +1,12 @@
+img[lazy=loading] {
+  opacity: 0;
+}
+
+img[lazy=loaded] {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 .morecasinocasitabi_line {
   border-color: #0d2858 !important;
 }
