@@ -1,33 +1,31 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
     <title>Hello, world!</title>
 </head>
 
 <body>
+    <h1>Hello, world!</h1>
+
     <div id="app">
         <button @click="key = 1">Hide the text below</button>
         <button @click="key = 2">Toggle hide and show</button>
         <button @click="key = 3">Toggle hide and show</button>
         <button @click="key = 4">Toggle hide and show</button>
+       
+          <h1 v-if="key == 1">1 Hide me on click event!</h1>
+          <h1 v-if="key == 2">2 Hide me on click event!</h1>
+          <h1 v-show="key == 3">3 Hide me on click event!</h1>
+          <h1 v-show="key == 4">4 Hide me on click event!</h1>
+      
+      </div>
 
-        <h1 v-if="key == 1">1 Hide me on click event!</h1>
-        <h1 v-if="key == 2">2 Hide me on click event!</h1>
-        <h1 v-show="key == 3">3 Hide me on click event!</h1>
-        <h1 v-show="key == 4">4 Hide me on click event!</h1>
 
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script>
         var app = new Vue({

@@ -1,9 +1,36 @@
-img[lazy=loading] {
+img[lazy="loading"] {
     opacity: 0;
 }
 
-img[lazy=loaded] {
+img[lazy="loaded"] {
     transition: opacity 1s;
+}
+
+.morecasino_tag {
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    .morecasino_tag_btn {
+        background: linear-gradient(to bottom, #ffb9cd 0%, #ff4276 100%);
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 4px #555;
+        border: 2px solid #ff91af;
+        padding: 5px 10px;
+        border-radius: 0.5rem;
+    }
+
+    .morecasino_tag_btn:focus {
+        outline: none;
+    }
+
+    .morecasino_tag_btn:hover {
+        opacity: 0.8;
+    }
+}
+
+.changeimgdeg{
+    transform: rotate(180deg);
 }
 
 // カジ旅
@@ -66,6 +93,15 @@ img[lazy=loaded] {
         .col-3 {
             padding-right: 0px;
             padding-left: 0px;
+
+            .morecasino_list_btn {
+                background-color: #fff0;
+                padding: 0;
+                border: 0;
+            }
+            .morecasino_list_btn:focus{
+                outline: none;
+            }
 
             .morecasino_list_casino {
                 border: 1px solid #d8d8d8;

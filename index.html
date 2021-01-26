@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- カジノ一覧リスト -->
-                    <div class="morecasino_list mb-4">
+                    <div id="morecasino_list" class="morecasino_list mb-4">
                         <div class="card-text"><small class="text-muted">▼ここのアイコンを押すとカジノの情報すぐ見えるよ！</small></div>
                         <div class="row morecasino_list_row">
                             <div class="col-sm-2 col-3">
@@ -144,24 +144,42 @@
                                     </div>
                                 </a>
                             </div>
+                            <div class="col-sm-2 col-3" v-show="allcasinolist">
+                                <a href="#konibet">
+                                    <div class="morecasino_list_casino">
+                                        <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
+                                            data-src="./IMG/morecasino/morecasinokonibet.png" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-3" v-show="allcasinolist">
+                                <a href="#queencasino">
+                                    <div class="morecasino_list_casino">
+                                        <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
+                                            data-src="./IMG/morecasino/morecasinoqueencasino.png" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-3">
+                                <button @click="allcasinoList" class="morecasino_list_btn">
+                                    <div class="morecasino_list_casino">
+                                        <img src="./IMG/morecasino/morecasinoarrow.png" class="morecasinopage_l_IMG"
+                                            :class="{changeimgdeg}" alt="morecasino">
+                                    </div>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="morecasino_tag mb-4">
-
-                    </div>
-
                     <div id="app">
-                        <div class="btn btn-primary m-1" >全カジノ</div>
-                        <div  @click="key = 1"></div>
-                        <div ></div>
-                        <button @click="key = 1" class="btn btn-primary m-1">ライブカジノおすすめ</button>
-                        <button @click="key = 2" class="btn btn-primary m-1">スロットカジノおすすめ</button>
-                        <button @click="key = 3">Toggle hide and show</button>
-                        <button @click="key = 4">Toggle hide and show</button>
+                        <div class="morecasino_tag mb-4">
+                            <button @click="allcasinoShow" class="morecasino_tag_btn m-1">全カジノ</button>
+                            <button @click="livecasinoShow" class="morecasino_tag_btn m-1">ライブカジノ向け</button>
+                            <button @click="slotcasinoShow" class="morecasino_tag_btn m-1">スロットカジノ向け</button>
+                        </div>
 
                         <!-- 188Bet -->
-                        <div id="188bet" class="morecasinopage mb-4" v-if="key == 1">
+                        <div id="188bet" class="morecasinopage mb-4" v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -199,12 +217,12 @@
                                 </div>
                                 <div class="col-sm-4 col-12 morecasinopage_l">
                                     <a href="https://onlinecasino-walker.com/ranking/188bet/">
-                                        <!-- <img class="lazy morecasinopage_l_IMG" alt="188ベット"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" /> -->
-                                        <div v-lazy-container="{ selector: 'img',}">
+                                        <img class="lazy morecasinopage_l_IMG" alt="188ベット"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" />
+                                        <!-- <div v-lazy-container="{ selector: 'img',}">
                                             <img class="morecasinopage_l_IMG" alt="188ベット" lazy="loading"
                                                 data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png">
-                                        </div>
+                                        </div> -->
                                     </a>
                                     <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
                                     <a href="https://aff.188bet.com/31276/website">
@@ -215,7 +233,7 @@
                         </div>
 
                         <!-- カジ旅 -->
-                        <div id="casitabi" class="morecasinopage mb-4 morecasinocasitabi_line" v-if="key == 2">
+                        <div id="casitabi" class="morecasinopage mb-4 morecasinocasitabi_line" v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -271,7 +289,7 @@
                         </div>
 
                         <!-- ラッキニッキー -->
-                        <div id="luckyniki" class="morecasinopage mb-4 morecasinoblack_line" v-if="key == 2">
+                        <div id="luckyniki" class="morecasinopage mb-4 morecasinoblack_line" v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -331,7 +349,8 @@
                         </div>
 
                         <!-- カジノシークレット -->
-                        <div id="casinosecret" class="morecasinopage mb-4 morecasinocasinosecret_line" v-if="key == 1">
+                        <div id="casinosecret" class="morecasinopage mb-4 morecasinocasinosecret_line"
+                            v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -393,7 +412,8 @@
                         </div>
 
                         <!-- インターカジノ -->
-                        <div id="intercasino" class="morecasinopage mb-4 morecasinointercasino_line" v-if="key == 2">
+                        <div id="intercasino" class="morecasinopage mb-4 morecasinointercasino_line"
+                            v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r morecasinointercasino_r">
                                     <div class="morecasinopage_r_title">
@@ -461,7 +481,8 @@
                         </div>
 
                         <!-- コニベット -->
-                        <div id="konibet" class="morecasinopage mb-4" style="border-color: #239afb;" v-if="key == 2">
+                        <div id="konibet" class="morecasinopage mb-4" style="border-color: #239afb;"
+                            v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -522,7 +543,7 @@
                         </div>
 
                         <!-- クイーンカジノ -->
-                        <div id="queencasino" class="morecasinopage mb-4" v-if="key == 1">
+                        <div id="queencasino" class="morecasinopage mb-4" v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -2259,8 +2280,8 @@
     <script src="./plugin/vanilla-lazyload-master/dist/lazyload.min.js"></script>
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
-    <script>
+    <!-- <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script> -->
+    <!-- <script>
         Vue.use(VueLazyload, {
             preLoad: 1.3,
             lazyComponent: true,
@@ -2268,21 +2289,48 @@
             // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
             listenEvents: ['scroll'],
         })
-
+    </script> -->
+    <script>
         var app = new Vue({
             el: '#app',
             data: {
-                key: '1'
+                livecasinoshow: true,
+                slotcasinoshow: true
+            },
+            methods: {
+                livecasinoShow() {
+                    this.livecasinoshow = true;
+                    this.slotcasinoshow = false
+                },
+                slotcasinoShow() {
+                    this.livecasinoshow = false;
+                    this.slotcasinoshow = true
+                },
+                allcasinoShow() {
+                    this.livecasinoshow = true,
+                        this.slotcasinoshow = true
+                },
+            }
+        })
+
+        var app = new Vue({
+            el: '#morecasino_list',
+            data: {
+                allcasinolist: false,
+                changeimgdeg: false,
+            },
+            methods: {
+                allcasinoList() {
+                    this.allcasinolist = !this.allcasinolist;
+                    this.changeimgdeg = !this.changeimgdeg
+                }
             }
         })
     </script>
 
 
     <script>$('.rankingpanel-collapse').on('show.bs.collapse', function () { $(this).siblings('.ranking_accordion_heading').addClass('active'); }); $('.rankingpanel-collapse').on('hide.bs.collapse', function () { $(this).siblings('.ranking_accordion_heading').removeClass('active'); });</script>
-    <script>
-        var lazyLoadInstance = new LazyLoad({
-        });
-    </script>
+    <script>var lazyLoadInstance = new LazyLoad({});</script>
 
 </body>
 
