@@ -85,93 +85,94 @@
                     </div>
 
                     <!-- カジノ一覧リスト -->
-                    <div id="morecasino_list" class="morecasino_list mb-4">
-                        <div class="card-text"><small class="text-muted">▼ここのアイコンを押すとカジノの情報すぐ見えるよ！</small></div>
-                        <div class="row morecasino_list_row">
-                            <div class="col-sm-2 col-3">
-                                <a href="#188bet">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="188ベット 188bet"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#casitabi">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="カジ旅 casitabi"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinocasitabiblack.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#luckyniki">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="ラッキーニッキー luckyniki"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinoluckyniki.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#casinosecret">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="カジノーシクレット casinosecret"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinosecret.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#intercasino">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="インターカジノ intercasino"
-                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinointercasinoblack.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#konibet">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
-                                            data-src="./IMG/morecasino/morecasinokonibet.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <a href="#queencasino">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
-                                            data-src="./IMG/morecasino/morecasinoqueencasino.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3" v-show="allcasinolist">
-                                <a href="#konibet">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
-                                            data-src="./IMG/morecasino/morecasinokonibet.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3" v-show="allcasinolist">
-                                <a href="#queencasino">
-                                    <div class="morecasino_list_casino">
-                                        <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
-                                            data-src="./IMG/morecasino/morecasinoqueencasino.png" />
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-3">
-                                <button @click="allcasinoList" class="morecasino_list_btn">
-                                    <div class="morecasino_list_casino">
-                                        <img src="./IMG/morecasino/morecasinoarrow.png" class="morecasinopage_l_IMG"
-                                            :class="{changeimgdeg}" alt="morecasino">
-                                    </div>
-                                </button>
+                    <div id="app">
+                        <div class="morecasino_list mb-4">
+                            <div class="card-text"><small class="text-muted">▼ここのアイコンを押すとカジノの情報すぐ見えるよ！</small></div>
+                            <div class="row morecasino_list_row">
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#188bet">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="188ベット 188bet"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#casitabi">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="カジ旅 casitabi"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinocasitabiblack.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#luckyniki">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="ラッキーニッキー luckyniki"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinoluckyniki.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#casinosecret">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="カジノーシクレット casinosecret"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinosecret.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#intercasino">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="インターカジノ intercasino"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinointercasinoblack.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#konibet">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
+                                                data-src="./IMG/morecasino/morecasinokonibet.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3">
+                                    <a href="#queencasino">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
+                                                data-src="./IMG/morecasino/morecasinoqueencasino.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3" v-show="allcasinolist">
+                                    <a href="#konibet">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
+                                                data-src="./IMG/morecasino/morecasinokonibet.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3" v-show="allcasinolist">
+                                    <a href="#queencasino">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
+                                                data-src="./IMG/morecasino/morecasinoqueencasino.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-2 col-3">
+                                    <button @click="allcasinoList" class="morecasino_list_btn">
+                                        <div class="morecasino_list_casino">
+                                            <img src="./IMG/morecasino/morecasinoarrow.png" class="morecasinopage_l_IMG"
+                                                :class="{changeimgdeg}" alt="morecasino">
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div id="app">
+
                         <div class="morecasino_tag mb-4">
                             <button @click="allcasinoShow" class="morecasino_tag_btn m-1">全カジノ</button>
                             <button @click="livecasinoShow" class="morecasino_tag_btn m-1">ライブ向け</button>
@@ -2295,7 +2296,9 @@
             el: '#app',
             data: {
                 livecasinoshow: true,
-                slotcasinoshow: true
+                slotcasinoshow: true,
+                allcasinolist: false,
+                changeimgdeg: false
             },
             methods: {
                 livecasinoShow() {
@@ -2310,16 +2313,6 @@
                     this.livecasinoshow = true,
                         this.slotcasinoshow = true
                 },
-            }
-        })
-
-        var app = new Vue({
-            el: '#morecasino_list',
-            data: {
-                allcasinolist: false,
-                changeimgdeg: false,
-            },
-            methods: {
                 allcasinoList() {
                     this.allcasinolist = !this.allcasinolist;
                     this.changeimgdeg = !this.changeimgdeg
