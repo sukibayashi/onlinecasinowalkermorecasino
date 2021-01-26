@@ -11,8 +11,8 @@ img[lazy="loaded"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .morecasino_tag .morecasino_tag_btn {
