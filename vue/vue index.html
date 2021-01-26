@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>カジノ一覧</title>
+    <link rel="stylesheet" href="../css/rankingCSS.css">
+    <link rel="stylesheet" href="../css/morecasinoCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar mb-4" style="background-color: #ff3d7d; ">
+        <a class="navbar-brand" href="#" style="color: #ffff; font-weight: 700;">OnlineCasinoWalker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="ranking_container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="recommendedEvent">
+                        <a href="https://onlinecasino-walker.com/new-casino/">
+                            <img style="width: 100%; height:100%;"
+                                src="https://mk0onlinecasino9uh6o.kinstacdn.com/wp-content/uploads/2021/01/onlinecasinobiginnerchipchanm.jpg"
+                                alt="オンラインカジノ2021年新カジノを紹介！">
+                        </a>
+                    </div>
+
+                    <div class="mt-4 mb-4">
+                        <div>
+                            <h2 class="rinsonlinecasinorankingtitle">ここ数年で、新しくオープンした<strong>オンラインカジノ</strong>が増えています。
+                            </h2>
+                        </div>
+                        <div>
+                            <h2 style="color:#ff3d7d;font-weight:700;font-size: 1rem;">
+                                「新しいカジノで遊ぶ事も大事ですが、インターネット上で安全に遊べるカジノを選ぶことも重要です！」</h2>
+                        </div>
+                        <div>この記事ではオンカジ女子がこれから始めようと思っている方も上級者の方も、<span
+                                style="color:#00375E;font-weight:700;">最新おすすめオンラインカジノ一覧</span>情報を紹介します。
+
+                        </div>
+                        <div class="lastupdate mt-2">最終更新日：2020-1-17</div>
+                    </div>
+
+                    <div id="app">
+                        <div class="search-wrapper">
+                            <input type="text" v-model="search" placeholder="Search title.." />
+                            <label>Search title:</label>
+                        </div>
+
+                        <div class="morecasino_tag mb-4">
+                            <button @click="allcasinoShow" class="morecasino_tag_btn m-1">全カジノ</button>
+                            <button @click="livecasinoShow" class="morecasino_tag_btn m-1">ライブ向け</button>
+                            <button @click="slotcasinoShow" class="morecasino_tag_btn m-1">スロット向け</button>
+                        </div>
+
+                        <!-- Vue Test -->
+                        <div v-for="post in filteredList">
+                            <div v-bind:id="post.id" class="morecasinopage mb-4" v-show="livecasinoshow">
+                                <div class="row morecasinopage_row">
+                                    <div class="col-sm-8 col-12 morecasinopage_r">
+                                        <div class="morecasinopage_r_title">
+                                            <h3>{{ post.title }}</h3>
+                                            <a class="morecasinopage_r_more" v-bind:href="post.infolink">
+                                                <div>もっと詳しく</div>
+                                            </a>
+                                        </div>
+                                        <div class="morecasinopage_r_point mt-3">
+                                            <ul id="demoCounter">
+                                                <li>{{ post.point1 }}</li>
+                                                <li>{{ post.point2 }}</li>
+                                                <li>③マイクロゲーミングとプレイテックの両方のゲームが遊べる可能。</li>
+                                                <li>④コンピューター相手ではなく、実際の<span class="markyellow">プレイヤーと対戦</span>ができます。
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="morecasinopage_r_payments mt-3">
+                                            <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                            <div class="morecasinopage_r_paymentsicon mt-2">
+                                                <div class="r_paymentsicon">
+                                                    <img class="lazy" alt="MasterCard"
+                                                        data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                                </div>
+                                                <div class="r_paymentsicon">
+                                                    <img class="lazy" alt="JCB"
+                                                        data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                                </div>
+                                                <div class="r_paymentsicon">
+                                                    <img class="lazy" alt="ecoPayz"
+                                                        data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-12 morecasinopage_l">
+                                        <a href="https://onlinecasino-walker.com/ranking/188bet/">
+                                            <img class="lazy morecasinopage_l_IMG" alt="188ベット"
+                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" />
+                                        </a>
+                                        <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
+                                        <a href="https://aff.188bet.com/31276/website">
+                                            <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 188Bet -->
+                        <div id="188bet" class="morecasinopage mb-4" v-show="livecasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>188ベット</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://onlinecasino-walker.com/ranking/188bet/">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①スポーツやロトやポーカー、麻雀多くなギャンブルゲームが用意されています。</li>
+                                            <li>②超お得な<span class="markyellow">200％初回入金ボーナス</span>。</li>
+                                            <li>③マイクロゲーミングとプレイテックの両方のゲームが遊べる可能。</li>
+                                            <li>④コンピューター相手ではなく、実際の<span class="markyellow">プレイヤーと対戦</span>ができます。</li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l">
+                                    <a href="https://onlinecasino-walker.com/ranking/188bet/">
+                                        <img class="lazy morecasinopage_l_IMG" alt="188ベット"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
+                                    <a href="https://aff.188bet.com/31276/website">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- カジ旅 -->
+                        <div id="casitabi" class="morecasinopage mb-4 morecasinocasitabi_line" v-show="slotcasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>カジ旅</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://onlinecasino-walker.com/ranking/kajitabi/">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①他にはない<span class="markyellow">RPG型オンラインカジノ</span>、自分に似たアバターを選ぶのもよし！
+                                            </li>
+                                            <li>②カジ旅内魔法の通貨（ルビー）を集めてお得なスピンを購入。</li>
+                                            <li>③通常のスロットを<span class="markyellow">6倍速で高速回転「BLITZ（ブリッツ）モード」</span>。</li>
+                                            <li>④ロトランド社のロトで遊ぶことができます</li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinocasitabi_bg">
+                                    <a href="https://onlinecasino-walker.com/ranking/kajitabi/">
+                                        <img class="lazy morecasinopage_l_IMG" alt="カジ旅 casitabi"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinocasitabi.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄40ボーナス</span></h4>
+                                    <a href="https://media.heroaffiliates.com/redirect.aspx?pid=269505&bid=3034">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ラッキニッキー -->
+                        <div id="luckyniki" class="morecasinopage mb-4 morecasinoblack_line" v-show="slotcasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>ラッキニッキー</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://onlinecasino-walker.com/ranking/luckyniki/">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①初回～3回目までの<span class="markyellow">入金特典最高「＄999のボーナス」</span>か<span
+                                                    class="markyellow">「最高1998回分のフリースピン」</span>を選んで貰うことができます。</li>
+                                            <li>②超お得な200％初回入金ボーナス。</li>
+                                            <li>③日替わりで変わるプロモーションがお得。</li>
+                                            <li>④豪華な自動招待制のVIP制度、特典やサービスが受ける同時に一定ランクになると<span
+                                                    class="markyellow">専属マネージャー</span>まで付きます。</li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"
+                                                style="width: 50px;display: flex; align-items: center;">
+                                                <img class="lazy" alt="Bitcoin" style="height:10px;"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/bitcoinsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinoblack_bg">
+                                    <a href="https://onlinecasino-walker.com/ranking/luckyniki/">
+                                        <img class="lazy morecasinopage_l_IMG" alt="ラッキニッキー luckyniki"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinoluckyniki.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄30ボーナス</span></h4>
+                                    <a href="http://site.gotoluckyniki.com/index.cgi?aname=matakikazuo&cg=japanese">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- カジノシークレット -->
+                        <div id="casinosecret" class="morecasinopage mb-4 morecasinocasinosecret_line"
+                            v-show="livecasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>カジノシークレット</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041&l=1">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①当サイトで登録方に初回入金額の50％（最高＄500）をキャッシュバック！</li>
+                                            <li>②ボーナスを<span class="markyellow">出金するために必要になる賭け条件が一切なし</span>、そのまま出金が可能です。
+                                            </li>
+                                            <li>③日本国内だけのトーナメントを随時開催されています。世界中のプレイヤーが対象になることが多いから、<span
+                                                    class="markyellow">日本人向けならライバルが少ない入賞確率が上がります</span>。</li>
+                                            <li>④<span
+                                                    class="markyellow">世界唯一の専用バカラテーブルはここだけで</span>、その名も「カジノシークレットクラブ」。ライブスタジオの内装や、ディーラーの衣装、テーブルのロゴもすべてカジノシークレットの印字があるので、高級感ばっちり。
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinocasinosecret_bg">
+                                    <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041&l=1">
+                                        <img class="lazy morecasinopage_l_IMG" alt="カジノシークレット casinosecret"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinosecret.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus"
+                                            style="color: #253141;">登録すると<br>入金不要＄30ボーナス</span></h4>
+                                    <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- インターカジノ -->
+                        <div id="intercasino" class="morecasinopage mb-4 morecasinointercasino_line"
+                            v-show="slotcasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r morecasinointercasino_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>インターカジノ</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://api.vjgroupaffiliation.com/go/redirect?bid=16&lid=4&aid=SRSoj9pL3&cid=1246">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①<span class="markyellow">出金条件なし！最大500ドル</span>まで貰えるウェルカムキャッシュです。</li>
+                                            <li>②20年以上の歴史業界最古のオンラインカジノが2020年1月末にウェブサイトを日本人向けに大幅にリニューアル！</li>
+                                            <li>③Gambling Online Magazine（GOM ）というオンラインカジノ業界で最も権威のある雑誌で<span
+                                                    class="markyellow">「最優秀カジノ賞」を5年連続</span>で受賞。
+                                            </li>
+                                            <li>④スロットゲームはRNG（乱数発生器）を導入していますので、当選は完全にランダムです、最高ジャックポットウィナーは、<span
+                                                    class="markyellow">日本円で8億円以上</span>を獲得しています。</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"
+                                                style="width: 50px;display: flex; align-items: center;">
+                                                <img class="lazy" alt="Bitcoin" style="height:10px;"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/bitcoinsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinointercasino_bg">
+                                    <a
+                                        href="https://api.vjgroupaffiliation.com/go/redirect?bid=16&lid=4&aid=SRSoj9pL3&cid=1246">
+                                        <img class="lazy morecasinopage_l_IMG" alt="インターカジノ intercasino"
+                                            data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinointercasino.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄10ボーナス</span></h4>
+                                    <a
+                                        href="https://api.vjgroupaffiliation.com/go/redirect?bid=16&lid=7&aid=SRSoj9pL3&cid=1246">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- コニベット -->
+                        <div id="konibet" class="morecasinopage mb-4" style="border-color: #239afb;"
+                            v-show="slotcasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>コニベット</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041&l=1">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①当サイトで登録方に初回入金額の50％（最高＄500）をキャッシュバック！</li>
+                                            <li>②ボーナスを<span class="markyellow">出金するために必要になる賭け条件が一切なし</span>、そのまま出金が可能です。
+                                            </li>
+                                            <li>③日本国内だけのトーナメントを随時開催されています。世界中のプレイヤーが対象になることが多いから、<span
+                                                    class="markyellow">日本人向けならライバルが少ない入賞確率が上がります</span>。</li>
+                                            <li>④<span
+                                                    class="markyellow">世界唯一の専用バカラテーブルはここだけで</span>、その名も「カジノシークレットクラブ」。ライブスタジオの内装や、ディーラーの衣装、テーブルのロゴもすべてカジノシークレットの印字があるので、高級感ばっちり。
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l" style="background-color: #239afb;">
+                                    <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041&l=1">
+                                        <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
+                                            data-src="../IMG/morecasino/morecasinokonibetwhite.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
+                                    <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- クイーンカジノ -->
+                        <div id="queencasino" class="morecasinopage mb-4" v-show="livecasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>クイーンカジノ</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://record.og-affiliate.com/_g8Y8PGbCLy6YNevImT-MDGNd7ZgqdRLk/1/">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①当サイトで登録方に初回入金額の50％（最高＄500）をキャッシュバック！</li>
+                                            <li>②ボーナスを<span class="markyellow">出金するために必要になる賭け条件が一切なし</span>、そのまま出金が可能です。
+                                            </li>
+                                            <li>③日本国内だけのトーナメントを随時開催されています。世界中のプレイヤーが対象になることが多いから、<span
+                                                    class="markyellow">日本人向けならライバルが少ない入賞確率が上がります</span>。</li>
+                                            <li>④<span
+                                                    class="markyellow">世界唯一の専用バカラテーブルはここだけで</span>、その名も「カジノシークレットクラブ」。ライブスタジオの内装や、ディーラーの衣装、テーブルのロゴもすべてカジノシークレットの印字があるので、高級感ばっちり。
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l">
+                                    <a href="https://record.og-affiliate.com/_g8Y8PGbCLy6YNevImT-MDGNd7ZgqdRLk/1/">
+                                        <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
+                                            data-src="../IMG/morecasino/morecasinoqueencasino.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>初回登録ボーナス$30</span></h4>
+                                    <a href="https://record.og-affiliate.com/_g8Y8PGbCLy76PBA04iUMN2Nd7ZgqdRLk/1/">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="rankingpage_IMG">
+                        <a href="https://onlinecasino-walker.com/ranking/">
+                            <img class="lazy" alt="2021版オンラインカジノランディング最新情報"
+                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/ranking2021mei.jpg" />
+                        </a>
+                    </div>
+                    <div class="rankingpage_twitter mt-4">
+                        <a class="twitter-timeline" data-tweet-limit="2" data-dnt="true" data-theme="light"
+                            href="https://twitter.com/oncasiwalker?ref_src=twsrc%5Etfw">Tweets by oncasiwalker</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="../plugin/vanilla-lazyload-master/dist/lazyload.min.js"></script>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./vue index.js"></script>
+
+    <!-- <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script> -->
+    <!-- <script>
+        Vue.use(VueLazyload, {
+            preLoad: 1.3,
+            lazyComponent: true,
+            attempt: 1,
+            // the default is ['scroll', 'wheel', 'mousewheel', 'resize', 'animationend', 'transitionend']
+            listenEvents: ['scroll'],
+        })
+    </script> -->
+    <!-- <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                livecasinoshow: true,
+                slotcasinoshow: true,
+                allcasinolist: false,
+                changeimgdeg: false
+            },
+            methods: {
+                livecasinoShow() {
+                    this.livecasinoshow = true;
+                    this.slotcasinoshow = false
+                },
+                slotcasinoShow() {
+                    this.livecasinoshow = false;
+                    this.slotcasinoshow = true
+                },
+                allcasinoShow() {
+                    this.livecasinoshow = true,
+                        this.slotcasinoshow = true
+                },
+                allcasinoList() {
+                    this.allcasinolist = !this.allcasinolist;
+                    this.changeimgdeg = !this.changeimgdeg
+                }
+            }
+        });
+    </script> -->
+
+
+    <script>$('.rankingpanel-collapse').on('show.bs.collapse', function () { $(this).siblings('.ranking_accordion_heading').addClass('active'); }); $('.rankingpanel-collapse').on('hide.bs.collapse', function () { $(this).siblings('.ranking_accordion_heading').removeClass('active'); });</script>
+    <script>var lazyLoadInstance = new LazyLoad({});</script>
+
+
+</body>
+
+</html>

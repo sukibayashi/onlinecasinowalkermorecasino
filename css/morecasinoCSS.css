@@ -85,6 +85,11 @@ img[lazy="loaded"] {
   background-size: cover;
 }
 
+.morecasinoqueencasino_bg {
+  background-image: url("../IMG/mainIMG/queencasinobgpc.png");
+  background-size: cover;
+}
+
 .morecasino_list .morecasino_list_row {
   margin-right: 0px;
   margin-left: 0px;
@@ -338,6 +343,10 @@ img[lazy="loaded"] {
   }
   .morecasinocasitabi_bg {
     background-image: url("../IMG/mainIMG/casitabibg.png");
+    background-size: cover;
+  }
+  .morecasinoqueencasino_bg {
+    background-image: url("../IMG/mainIMG/queencasinobg.png");
     background-size: cover;
   }
 }

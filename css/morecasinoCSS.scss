@@ -83,6 +83,12 @@ img[lazy="loaded"] {
     background-size: cover;
 }
 
+// クイーンカジノ
+.morecasinoqueencasino_bg{
+    background-image: url("../IMG/mainIMG/queencasinobgpc.png");
+    background-size: cover;
+}
+
 // カジノ一覧
 .morecasino_list {
     .morecasino_list_row {
@@ -314,6 +320,11 @@ img[lazy="loaded"] {
     .morecasinocasitabi_bg {
         // background-color: #0d2858 !important;
         background-image: url("../IMG/mainIMG/casitabibg.png");
+        background-size: cover;
+    }
+
+    .morecasinoqueencasino_bg{
+        background-image: url("../IMG/mainIMG/queencasinobg.png");
         background-size: cover;
     }
 }
