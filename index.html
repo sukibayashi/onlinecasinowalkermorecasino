@@ -84,10 +84,11 @@
                         <div class="lastupdate mt-2">最終更新日：2020-1-17</div>
                     </div>
 
-                    <!-- カジノ一覧リスト -->
                     <div id="app">
+                        <!-- カジノ一覧リスト -->
                         <div class="morecasino_list mb-4">
-                            <div class="card-text"><small class="text-muted">▼ここのアイコンを押すとカジノの情報すぐ見えるよ！<br>※ 現在合計 17 社オンラインカジノを掲載されています。</small></div>
+                            <div class="card-text"><small class="text-muted">▼ここのアイコンを押すとカジノの情報すぐ見えるよ！<br>※ 現在合計 17
+                                    社オンラインカジノを掲載されています。</small></div>
                             <div class="row morecasino_list_row">
                                 <div @click="allcasinoShow" class="col-sm-2 col-3">
                                     <a href="#188bet">
@@ -146,18 +147,18 @@
                                     </a>
                                 </div>
                                 <div @click="allcasinoShow" class="col-sm-2 col-3" v-show="allcasinolist">
-                                    <a href="#konibet">
+                                    <a href="#netbet">
                                         <div class="morecasino_list_casino">
                                             <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
-                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinokonibet.png" />
+                                                data-src="/IMG/morecasino/morecasinonetbet.png" />
                                         </div>
                                     </a>
                                 </div>
                                 <div @click="allcasinoShow" class="col-sm-2 col-3" v-show="allcasinolist">
-                                    <a href="#queencasino">
+                                    <a href="#wildjungle">
                                         <div class="morecasino_list_casino">
                                             <img class="lazy morecasinopage_l_IMG" alt="クイーンカジノ queencasino"
-                                                data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinoqueencasino.png" />
+                                                data-src="/IMG/morecasino/morecasinowildjungle.png" />
                                         </div>
                                     </a>
                                 </div>
@@ -178,7 +179,7 @@
                             <button @click="slotcasinoShow" class="morecasino_tag_btn m-1">スロット向け</button>
                         </div>
 
-                        <!-- 188Bet -->
+                        <!-- 1.188Bet -->
                         <div id="188bet" class="morecasinopage mb-4" v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
@@ -224,7 +225,7 @@
                                                 data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasino188bet.png">
                                         </div> -->
                                     </a>
-                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄20</span></h4>
                                     <a href="https://aff.188bet.com/31276/website">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
@@ -232,7 +233,7 @@
                             </div>
                         </div>
 
-                        <!-- カジ旅 -->
+                        <!-- 2.カジ旅 -->
                         <div id="casitabi" class="morecasinopage mb-4 morecasinocasitabi_line" v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
@@ -280,7 +281,7 @@
                                         <img class="lazy morecasinopage_l_IMG" alt="カジ旅 casitabi"
                                             data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinocasitabi.png" />
                                     </a>
-                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄40ボーナス</span></h4>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄40</span></h4>
                                     <a href="https://media.heroaffiliates.com/redirect.aspx?pid=269505&bid=3034">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
@@ -288,7 +289,7 @@
                             </div>
                         </div>
 
-                        <!-- ラッキニッキー -->
+                        <!-- 3.ラッキニッキー -->
                         <div id="luckyniki" class="morecasinopage mb-4 morecasinoblack_line" v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
@@ -340,7 +341,7 @@
                                         <img class="lazy morecasinopage_l_IMG" alt="ラッキニッキー luckyniki"
                                             data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinoluckyniki.png" />
                                     </a>
-                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄30ボーナス</span></h4>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄30</span></h4>
                                     <a href="http://site.gotoluckyniki.com/index.cgi?aname=matakikazuo&cg=japanese">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
@@ -348,7 +349,7 @@
                             </div>
                         </div>
 
-                        <!-- カジノシークレット -->
+                        <!-- 4.カジノシークレット -->
                         <div id="casinosecret" class="morecasinopage mb-4 morecasinocasinosecret_line"
                             v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
@@ -403,7 +404,7 @@
                                             data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinosecret.png" />
                                     </a>
                                     <h4><span class="morecasinopage_l_bonus"
-                                            style="color: #253141;">登録すると<br>入金不要＄30ボーナス</span></h4>
+                                            style="color: #253141;">登録すると<br>入金不要ボーナス＄30</span></h4>
                                     <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
@@ -411,7 +412,7 @@
                             </div>
                         </div>
 
-                        <!-- インターカジノ -->
+                        <!-- 5.インターカジノ -->
                         <div id="intercasino" class="morecasinopage mb-4 morecasinointercasino_line"
                             v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
@@ -471,7 +472,7 @@
                                         <img class="lazy morecasinopage_l_IMG" alt="インターカジノ intercasino"
                                             data-src="https://onlinecasino-walker.com/wp-content/uploads/2021/01/morecasinointercasino.png" />
                                     </a>
-                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄10ボーナス</span></h4>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄10</span></h4>
                                     <a
                                         href="https://api.vjgroupaffiliation.com/go/redirect?bid=16&lid=7&aid=SRSoj9pL3&cid=1246">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
@@ -480,7 +481,7 @@
                             </div>
                         </div>
 
-                        <!-- コニベット -->
+                        <!-- 6.コニベット -->
                         <div id="konibet" class="morecasinopage mb-4" style="border-color: #239afb;"
                             v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
@@ -548,7 +549,7 @@
                                         <img class="lazy morecasinopage_l_IMG" alt="コニベット konibet"
                                             data-src="./IMG/morecasino/morecasinokonibetwhite.png" />
                                     </a>
-                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要＄20ボーナス</span></h4>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄20</span></h4>
                                     <a href="https://www3.samuraiclick.com/go?m=28806&c=46&b=1041">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
@@ -556,7 +557,7 @@
                             </div>
                         </div>
 
-                        <!-- クイーンカジノ -->
+                        <!-- 7.クイーンカジノ -->
                         <div id="queencasino" class="morecasinopage mb-4" v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
@@ -572,8 +573,11 @@
                                             <li>①セクシー女優がイメージキャラクターとなるクイーンカジノ！<span
                                                     class="markyellow">女優とのコラボキャンペーンなどを定期的に実施しています</span>。</li>
                                             <li>②ライブカジノが業界最多9種クラスあるので、過去にセクシー<span
-                                                class="markyellow">女優が自らカジノディーラーを務めてゲーム進行した</span>こともあります。日本人向けのボーナスもたくさん実施しています。</li>
-                                            <li>③今なら、<span class="markyellow">初回入金ボーナス（最高$1,600）</span>も取得可能！スロットプレイする場合には、1週間合計ベット額が5000ドル以上になると、<span class="markyellow">最大1.28％のリベートボーナス</span>を獲得。</li>
+                                                    class="markyellow">女優が自らカジノディーラーを務めてゲーム進行した</span>こともあります。日本人向けのボーナスもたくさん実施しています。
+                                            </li>
+                                            <li>③今なら、<span
+                                                    class="markyellow">初回入金ボーナス（最高$1,600）</span>も取得可能！スロットプレイする場合には、1週間合計ベット額が5000ドル以上になると、<span
+                                                    class="markyellow">最大1.28％のリベートボーナス</span>を獲得。</li>
                                         </ul>
                                     </div>
                                     <div class="morecasinopage_r_payments mt-3">
@@ -614,6 +618,156 @@
                                     <h4><span class="morecasinopage_l_bonus">登録すると<br>初回登録ボーナス$30 + 30回フリースピン</span>
                                     </h4>
                                     <a href="https://record.og-affiliate.com/_g8Y8PGbCLy76PBA04iUMN2Nd7ZgqdRLk/1/">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8.ネットベット -->
+                        <div id="netbet" class="morecasinopage mb-4 morecasinonetbet_line" v-show="livecasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>ネットベット</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://banners.livepartners.com/click.php?z=133141">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①NetBetは2001年に設立し、<span
+                                                    class="markyellow">約20年に渡り老舗オンラインカジノ</span>の一つです、経験豊富なスタッフによる安心で手厚いサポートが人気です。
+                                            </li>
+                                            <li>②3回のご入金額にあわせて<span class="markyellow">合計最大$500のボーナス</span>を進呈します。</li>
+                                            <li>③複数アカウント必要がない、1つのアカウントでスポーツベッティング、ライブカジノ等々のギャンブルゲームがプレイできます。</li>
+                                            <li>④月曜日から日曜日まで、日替わり<span
+                                                    class="markyellow">曜日別デイリーオファー</span>を配信！毎日新しい気分で楽しませてくれます。</li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Visa"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/visasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Diners Club International"
+                                                    data-src="./IMG/morecasino/payments/素材/dinersclubsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Entropay"
+                                                    data-src="./IMG/morecasino/payments/素材/entropaysvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="paysafecard"
+                                                    data-src="./IMG/morecasino/payments/素材/paysafecardsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Klarna"
+                                                    data-src="./IMG/morecasino/payments/素材/klarnasvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="skrill"
+                                                    data-src="./IMG/morecasino/payments/素材/skrillsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="webmoney"
+                                                    data-src="./IMG/morecasino/payments/素材/webmoneysvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="trustlysvg"
+                                                    data-src="./IMG/morecasino/payments/素材/trustlysvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinonetbet_bg">
+                                    <a href="https://banners.livepartners.com/click.php?z=133139">
+                                        <img class="lazy morecasinopage_l_IMG" alt="ネットベット netbet"
+                                            data-src="/IMG/morecasino/morecasinonetbet.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>Netbetスポーツ入金不要ボーナス＄20</span>
+                                    </h4>
+                                    <a href="https://banners.livepartners.com/click.php?z=133139">
+                                        <div class="morecasinopage_l_play">今すぐプレイ</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9.ワイルドジャングル -->
+                        <div id="wildjungle" class="morecasinopage mb-4 morecasinowildjungle_line"
+                            v-show="livecasinoshow">
+                            <div class="row morecasinopage_row">
+                                <div class="col-sm-8 col-12 morecasinopage_r">
+                                    <div class="morecasinopage_r_title">
+                                        <h3>ワイルドジャングル</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://www.facebook.com/WildjungleCasino.japan">
+                                            <div>もっと詳しく</div>
+                                        </a>
+                                    </div>
+                                    <div class="morecasinopage_r_point mt-3">
+                                        <ul>
+                                            <li>①<span class="markyellow">24時間365日いつでも日本語で質問できて</span>、速攻回答有りの対応だから超安心！
+                                            </li>
+                                            <li>②<span class="markyellow">初回入金最高 $800 ボーナス</span>を獲得することができます、毎入金ごとにもらえる
+                                                10% 入金ボーナス、<span
+                                                    class="markyellow">友達紹介ボーナス</span>、賭け金の数%が還元されるキャッシュバックボーナス等々、素敵なボーナス企画がたくさんあります。
+                                            </li>
+                                            <li>③Playtech系のオンラインカジノで安全性、信頼性が高い！</li>
+                                            <li>④1億2700万円ジャックボット記録炸裂、<span class="markyellow">日本人最高ジャックボット賞金額</span>！
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="morecasinopage_r_payments mt-3">
+                                        <div class="morecasinopage_r_paymentstitle">入出金方法</div>
+                                        <div class="morecasinopage_r_paymentsicon mt-2">
+                                            <div class="r_paymentsicon"><img class="lazy" alt="jbanq"
+                                                    data-src="./IMG/morecasino/payments/素材/jbanqsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="Webanqsvg"
+                                                    data-src="./IMG/morecasino/payments/素材/webanqsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"
+                                                style="width: 50px;display: flex; align-items: center;">
+                                                <img class="lazy" alt="Bitcoin" style="height:10px;"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/bitcoinsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-12 morecasinopage_l morecasinowildjungle_bg">
+                                    <a
+                                        href="http://online.wildjunglecasino.com/promoRedirect?key=ej0xNDczNjk5OSZsPTEzNTI0NjE4JnA9NTQ5MDE%3D">
+                                        <img class="lazy morecasinopage_l_IMG" alt="ワイルドジャングル wildjungle"
+                                            data-src="/IMG/morecasino/morecasinowildjungle.png" />
+                                    </a>
+                                    <h4><span class="morecasinopage_l_bonus">登録すると<br>入金不要ボーナス＄30</span>
+                                    </h4>
+                                    <a
+                                        href="http://online.wildjunglecasino.com/promoRedirect?key=ej0xNDczNjk5OSZsPTEzNTI0NjE4JnA9NTQ5MDE%3D">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
                                 </div>

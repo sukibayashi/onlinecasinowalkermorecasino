@@ -90,6 +90,22 @@ img[lazy="loaded"] {
   background-size: cover;
 }
 
+.morecasinonetbet_line {
+  border-color: #333743 !important;
+}
+
+.morecasinonetbet_bg {
+  background-color: #333743 !important;
+}
+
+.morecasinowildjungle_line {
+  border-color: #073701 !important;
+}
+
+.morecasinowildjungle_bg {
+  background-color: #073701 !important;
+}
+
 .morecasino_list .morecasino_list_row {
   margin-right: 0px;
   margin-left: 0px;
@@ -347,6 +363,11 @@ img[lazy="loaded"] {
   }
   .morecasinoqueencasino_bg {
     background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/queencasinobg.png");
+    background-size: cover;
+  }
+  .morecasinonetbet_bg {
+    background-color: #fff0 !important;
+    background-image: url("/IMG/mainIMG/netbetbg.png");
     background-size: cover;
   }
 }
