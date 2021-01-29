@@ -106,6 +106,24 @@ img[lazy="loaded"] {
   background-color: #073701 !important;
 }
 
+.morecasinowilliamhill_line {
+  border-color: #001b5f !important;
+}
+
+.morecasinowilliamhill_bg {
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/williamhillbgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinolivecasinohouse_line {
+  border-color: #490303 !important;
+}
+
+.morecasinolivecasinohouse_bg {
+  background-image: linear-gradient(to top, #490303, rgba(53, 53, 53, 0) 4px), linear-gradient(to right, rgba(0, 0, 0, 0.2) 0, transparent 3px), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0, transparent 3px), radial-gradient(closest-side, #810000, #490303);
+  background-size: cover;
+}
+
 .morecasino_list .morecasino_list_row {
   margin-right: 0px;
   margin-left: 0px;
@@ -369,6 +387,9 @@ img[lazy="loaded"] {
     background-color: #fff0 !important;
     background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/netbetbg.png");
     background-size: cover;
+  }
+  .morecasinowilliamhill_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/williamhillbg.jpg");
   }
 }
 
