@@ -124,6 +124,24 @@ img[lazy="loaded"] {
   background-size: cover;
 }
 
+.morecasinoluckycasino_line {
+  border-color: #4a1b5f !important;
+}
+
+.morecasinoluckycasino_bg {
+  background-image: url("/IMG/mainIMG/luckycasinobgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinojoycasino_line {
+  border-color: #4a1b5f !important;
+}
+
+.morecasinojoycasino_bg {
+  background-image: url("/IMG/mainIMG/joycasinobgpc.jpg");
+  background-size: cover;
+}
+
 .morecasino_list .morecasino_list_row {
   margin-right: 0px;
   margin-left: 0px;
@@ -390,6 +408,14 @@ img[lazy="loaded"] {
   }
   .morecasinowilliamhill_bg {
     background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/williamhillbg.jpg");
+  }
+  .morecasinoluckycasino_bg {
+    background-image: url("/IMG/mainIMG/luckycasinobg.jpg");
+    background-size: cover;
+  }
+  .morecasinojoycasino_bg {
+    background-image: url("/IMG/mainIMG/joycasinobg.png");
+    background-size: cover;
   }
 }
 
