@@ -188,6 +188,14 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div @click="allcasinoShow" class="col-sm-2 col-3" v-show="allcasinolist">
+                                    <a href="#joycasino">
+                                        <div class="morecasino_list_casino">
+                                            <img class="lazy morecasinopage_l_IMG" alt="ラッキーカジノ luckycasino"
+                                                data-src="./IMG/morecasino/morecasinojoycasino.png" />
+                                        </div>
+                                    </a>
+                                </div>
                                 <div class="col-sm-2 col-3">
                                     <button @click="allcasinoList" class="morecasino_list_btn">
                                         <div class="morecasino_list_casino">
@@ -922,7 +930,7 @@
 
                         <!-- 12.ラッキーカジノ -->
                         <div id="luckycasino" class="morecasinopage mb-4 morecasinoluckycasino_line"
-                            v-show="spoortscasinoshow">
+                            v-show="livecasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
@@ -980,12 +988,16 @@
                         </div>
 
                         <!-- 13.ジョイカジノ -->
-                        <div id="luckycasino" class="morecasinopage mb-4 morecasinojoycasino_line"
-                            v-show="spoortscasinoshow">
+                        <div id="joycasino" class="morecasinopage mb-4 morecasinojoycasino_line"
+                            v-show="slotcasinoshow">
                             <div class="row morecasinopage_row">
                                 <div class="col-sm-8 col-12 morecasinopage_r">
                                     <div class="morecasinopage_r_title">
                                         <h3>ジョイカジノ</h3>
+                                        <a class="morecasinopage_r_more"
+                                            href="https://onlinecasino-walker.com/ranking/joycasino/">
+                                            <div>もっと詳しく</div>
+                                        </a>
                                     </div>
                                     <div class="morecasinopage_r_point mt-3">
                                         <ul>
@@ -1003,35 +1015,67 @@
                                             <div class="r_paymentsicon"><img class="lazy" alt="MasterCard"
                                                     data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/mcsvg.svg?_t=1611126500" />
                                             </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="JCB"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/jcbsvg.svg" />
+                                            </div>
                                             <div class="r_paymentsicon"><img class="lazy" alt="ecoPayz"
                                                     data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ecopayzsvg.svg" />
-                                            </div>
-                                            <div class="r_paymentsicon"> <img class="lazy" alt="Sticpay"
-                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/sticpaysvg.svg" />
                                             </div>
                                             <div class="r_paymentsicon">
                                                 <img class="lazy" alt="skrill"
                                                     data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/skrillsvg.svg" />
                                             </div>
                                             <div class="r_paymentsicon">
-                                                <img class="lazy" alt="paysafecard"
-                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/paysafecardsvg.svg" />
-                                            </div>
-                                            <div class="r_paymentsicon">
                                                 <img class="lazy" alt="Netellersvg"
                                                     data-src="./IMG/morecasino/payments/素材/netellersvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="webmoney"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/webmoneysvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"
+                                                style="width: 50px;display: flex; align-items: center;">
+                                                <img class="lazy" alt="Bitcoin" style="height:10px;"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/bitcoinsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Ripple"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/ripplesvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon"> <img class="lazy" alt="Venus Point"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/venuspointsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Sticpay"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/sticpaysvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="iWallet"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/iwalletsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Paypal"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/paypalsvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Entropay"
+                                                    data-src="https://onlinecasino-walker.com/wp-content/uploads/morecasino/entropaysvg.svg" />
+                                            </div>
+                                            <div class="r_paymentsicon">
+                                                <img class="lazy" alt="Much Better"
+                                                    data-src="./IMG/morecasino/payments/素材/muchbettersvg.svg" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-12 morecasinopage_l morecasinojoycasino_bg">
-                                    <a href="https://record.glitnoraffiliates.com/_lMYuy2xZk4Jutv7iXV6HvmNd7ZgqdRLk/1">
+                                    <a href="https://joycasino.com/ja/?partner=p27480p3194748paba2">
                                         <img class="lazy morecasinopage_l_IMG" alt="ラッキーカジノ luckycasino"
                                             data-src="./IMG/morecasino/morecasinojoycasino.png" />
                                     </a>
                                     <h4><span class="morecasinopage_l_bonus">登録すると<br>3回目までの入金で最高＄1500ボーナス</span>
                                     </h4>
-                                    <a href="https://record.glitnoraffiliates.com/_lMYuy2xZk4Jutv7iXV6HvmNd7ZgqdRLk/1">
+                                    <a href="https://joycasino.com/ja/?partner=p27480p3194748paba2">
                                         <div class="morecasinopage_l_play">今すぐプレイ</div>
                                     </a>
                                 </div>
