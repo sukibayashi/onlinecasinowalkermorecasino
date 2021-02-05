@@ -142,6 +142,24 @@ img[lazy="loaded"] {
   background-size: cover;
 }
 
+.morecasinoempire777_line {
+  border-color: #fad026 !important;
+}
+
+.morecasinoempire777_bg {
+  background-image: url("/IMG/mainIMG/empire777bgpc.png");
+  background-size: cover;
+}
+
+.morecasinowildz_line {
+  border-color: #412786 !important;
+}
+
+.morecasinowildz_bg {
+  background-image: url("/IMG/mainIMG/wildzcasinobgpc.png");
+  background-size: cover;
+}
+
 .morecasino_list .morecasino_list_row {
   margin-right: 0px;
   margin-left: 0px;
@@ -415,6 +433,14 @@ img[lazy="loaded"] {
   }
   .morecasinojoycasino_bg {
     background-image: url("/IMG/mainIMG/joycasinobg.jpg");
+    background-size: cover;
+  }
+  .morecasinoempire777_bg {
+    background-image: url("/IMG/mainIMG/empire777bg.png");
+    background-size: cover;
+  }
+  .morecasinowildz_bg {
+    background-image: url("/IMG/mainIMG/wildzcasinobg.png");
     background-size: cover;
   }
 }

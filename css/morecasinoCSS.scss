@@ -147,6 +147,28 @@ img[lazy="loaded"] {
     background-size: cover;
 }
 
+// エンパイア
+.morecasinoempire777_line {
+    border-color: #fad026 !important;
+    
+}
+
+.morecasinoempire777_bg {
+    background-image: url("/IMG/mainIMG/empire777bgpc.png");
+    background-size: cover;
+}
+
+// Wildz
+.morecasinowildz_line {
+    border-color: #412786 !important;
+    
+}
+
+.morecasinowildz_bg {
+    background-image: url("/IMG/mainIMG/wildzcasinobgpc.png");
+    background-size: cover;
+}
+
 
 // カジノ一覧
 .morecasino_list {
@@ -404,6 +426,16 @@ img[lazy="loaded"] {
 
     .morecasinojoycasino_bg {
         background-image: url("/IMG/mainIMG/joycasinobg.jpg");
+        background-size: cover;
+    }
+
+    .morecasinoempire777_bg {
+        background-image: url("/IMG/mainIMG/empire777bg.png");
+        background-size: cover;
+    }
+
+    .morecasinowildz_bg {
+        background-image: url("/IMG/mainIMG/wildzcasinobg.png");
         background-size: cover;
     }
 }
